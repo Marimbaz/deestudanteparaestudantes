@@ -1,0 +1,58 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, rgba(0,147,253,0.1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.HeroGraphic{
+    position: absolute;
+    width: 100%;
+    bottom: -12rem;
+    z-index: 120;
+}
+
+@media screen and (max-width: 600px){ 
+
+    .HeroGraphic{
+        bottom: -5rem;
+    }
+
+    .HeroIcon-container{
+        bottom: 5rem;
+        width: 10rem;
+    }
+
+}

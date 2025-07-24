@@ -59,3 +59,58 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
+
+// Modal functionality
+const modal = document.getElementById('modal');
+
+function openModal() {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        closeModal();
+    }
+});
+
+const swiper = new Swiper('.slider-wrapper', {
+
+    spaceBetween: 10,
+    grabCursor: true,
+    
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: true,
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        0:{
+            slidesPerView: 1
+        },
+        620:{
+            slidesPerView: 1
+        },
+        1024:{
+            slidesPerView: 1
+        },   
+    }
+  });
+        

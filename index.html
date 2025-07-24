@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/tailwind.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 </head>
 <body class="bg-white text-gray-800">
@@ -20,7 +21,7 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-100">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center">
                 <img src="./assets/img/logo/DE ESTUDANTE PARA ESTUDANTES_LOGO PRINCIPAL.png" alt="Logo DEPE" class="h-10 mr-2">
@@ -73,48 +74,120 @@
         <img src="./assets/img/HeroGraphic.png" alt="" class="HeroGraphic z-20">
     </section>
 
-    <!-- About Section -->
-    <section id="sobre" class="py-16 md:pt-36 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Sobre o Programa</h2>
-                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                    O "De Estudante Para Estudante" é uma iniciativa do LABCriativo que conecta jovens talentosos com oportunidades reais de desenvolvimento profissional e pessoal durante as férias escolares.
-                </p>
-            </div>
+    <section class="py-16 md:pt-36 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto" id="sobre">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Sobre o Projecto</h2>
+            <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+            <p class=" text-gray-600 max-w-3xl mx-auto">
+                O "De Estudante Para Estudante" é uma iniciativa do LABCriativo que conecta jovens talentosos com oportunidades reais de desenvolvimento profissional e pessoal.
+            </p>
+        </div>
+        
+        <div class="swiper">
+            <section id="slider" class="slider-wrapper">
+                
+                <section class="swiper-wrapper">
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col md:flex-row gap-8 items-center justify-center">
+                            <div class="w-full md:w-2/5">
+                                <img src="./assets/img/1st-poster.jpg" 
+                                     alt="Estudantes em atividade" 
+                                     class="w-full h-auto rounded-lg shadow-lg object-cover">
+                            </div>
+                            <div class="w-full md:w-1/2">
+                                <h3 class="text-2xl font-bold mb-4 text-[#0093fd]">Conectando Gerações: O Que a Universidade Ensina, o Mercado Exige e o Sucesso Exige</h3>
+                                <p class="text-gray-700 mb-6">
+                                    No dia 05 de Abril de 2025, o "De Estudante para Estudantes" reuniu dezenas de jovens Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi praesentium expedita earum tempora alias sunt laudantium, recusandae explicabo quam in natus omnis. Porro numquam dolorem veniam, velit voluptates aliquam aperiam?
+                                </p>
+                                <button onclick="openModal()" class="bg-[#0093fd] hover:bg-[#000fcc] text-white font-medium py-2 px-6 rounded-full transition duration-300 transform hover:scale-105">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col md:flex-row-reverse gap-8 items-center justify-center">
+                            <div class="w-full md:w-2/3">
+                                <img src="./assets/img/D.png"  
+                                     class="w-full md:w-2/3 h-auto rounded-lg object-cover">
+                            </div>
+                            <div class="w-full md:w-1/2">
+                                <h3 class="text-2xl font-bold mb-4 text-[#0093fd]">Plano de Férias 2025</h3>
+                                <p class="text-gray-700 mb-6">
+                                    O Plano de Férias "De Estudante para Estudantes" 2025 é uma oportunidade para estudantes e jovens empreendedores transformarem as suas férias através de formações práticas, estágios, acampamentos interprovinciais e projetos de impacto social.
+                                </p>
+                                <div class="grid grid-cols-2 gap-4 mb-6">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-graduation-cap text-[#0093fd]"></i>
+                                        <span>Formação</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-briefcase text-[#0093fd]"></i>
+                                        <span>Estágios</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-campground text-[#0093fd]"></i>
+                                        <span>Acampamentos</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-hands-helping text-[#0093fd]"></i>
+                                        <span>Impacto Social</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div class="order-2 md:order-1">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Por que participar?</h3>
-                    <p class="text-gray-600 mb-6">
-                        Em 2025, estamos levando o programa para outro nível com formações práticas, estágios em empresas parceiras, acampamentos entre províncias e projetos comunitários que realmente fazem a diferença.
-                    </p>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
-                            <span class="text-gray-700">Acesso exclusivo a formações com certificação</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
-                            <span class="text-gray-700">Experiência prática em empresas reais</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
-                            <span class="text-gray-700">Networking com outros jovens talentos</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
-                            <span class="text-gray-700">Oportunidade de criar impacto social</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="order-1 md:order-2">
-                    <img src="./assets/img/D.png" alt="Estudantes aprendendo" class="rounded-lg w-full">
-                </div>
-            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
         </div>
     </section>
+    
+    <!-- Modal -->
+    <div id="modal" class="modal fixed inset-0 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="modal-content relative bg-white rounded-lg max-w-4xl w-full mx-4 p-6 max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+            <h3 class="text-2xl font-bold mb-6 text-[#0093fd]">1ª edição em detalhes</h3>
+            
+            <div class="aspect-w-16 aspect-h-9 mb-6">
+                <iframe class="w-full h-64 md:h-96" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div>
+                    <h4 class="font-bold text-lg mb-2">Números do Evento</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2"><i class="fas fa-users text-[#0093fd]"></i> 200 participantes</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-[#0093fd]"></i> 11 palestrantes representadas</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-calendar-alt text-[#0093fd]"></i> Ponto 5</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-project-diagram text-[#0093fd]"></i> Ponto 4</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-2">Depoimentos</h4>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <p class="italic mb-2">"Esta experiência mudou minha perspectiva sobre o que posso alcançar como jovem."</p>
+                        <p class="font-medium text-[#0093fd]">- Maria, 19 anos</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="./assets/" alt="1" class="rounded-lg object-cover h-32 w-full">
+                <img src="./assets/" alt="2" class="rounded-lg object-cover h-32 w-full">
+                <img src="./assets/" alt="3" class="rounded-lg object-cover h-32 w-full">
+                <img src="./assets/" alt="4" class="rounded-lg object-cover h-32 w-full">
+            </div>
+        </div>
+    </div>
 
     <!-- Benefits Section -->
     <section id="beneficios" class="py-16 bg-gray-50">
@@ -335,7 +408,7 @@
             </div>
         </div>
 
-        <img src="./assets/img/MiddleGraphic.png" alt="" class="absolute z-50 w-full bottom--10 md:bottom--44">
+        <img src="./assets/img/MiddleGraphic.png" alt="" class="absolute z-30 w-full bottom--10 md:bottom--44">
     </section>
 
     <!-- Testimonials -->
@@ -620,7 +693,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
 </html>

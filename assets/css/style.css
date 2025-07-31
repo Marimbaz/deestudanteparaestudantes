@@ -5,8 +5,14 @@ body {
     scroll-behavior: smooth;
 }
 
-.hero-gradient {
-    background: linear-gradient(135deg, rgba(0,147,253,0.1) 0%, rgba(255,255,255,1) 100%);
+.hero-background {
+    min-height: 100vh;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0) 70%),
+    url('../img/fundo-animado.webp');
+  background-size: 100% 100%, cover;
+  background-repeat: no-repeat;
+  background-position: left, right;
 }
 
 .card-hover {
@@ -76,6 +82,16 @@ body {
 
     .HeroGraphic{
         bottom: -5rem;
+    }
+    
+    .hero-background {
+        
+        background-image:
+            linear-gradient(to top, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 100%),
+            url('../img/fundo-animado.webp');
+        background-size: 100% 100%, cover;
+        background-repeat: no-repeat;
+        background-position: center, center top; /* ajusta altura do webp */
     }
 
     .HeroIcon-container{

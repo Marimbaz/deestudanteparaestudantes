@@ -1,23 +1,40 @@
- // Mobile menu toggle
+const form = document.getElementById("form-inscricao");
+const sucesso = document.getElementById("sucesso");
+const botao = document.getElementById("btn-enviar");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Previne envio duplicado
+    botao.disabled = true;
+    botao.innerText = "Enviando...";
+
+    const dados = new FormData(form);
+
+    fetch(form.action, {
+    method: "POST",
+    body: dados
+    })
+    .then(res => res.text())
+    .then(() => {
+    form.reset();
+    sucesso.classList.remove("hidden");
+    botao.innerText = "Inscrição enviada ✔";
+    })
+    .catch(() => {
+    alert("Ocorreu um erro. Tente novamente.");
+    botao.disabled = false;
+    botao.innerText = "Enviar Inscrição";
+    });
+});
+
+
+
+
+// Mobile menu toggle
 document.getElementById('menu-toggle').addEventListener('click', function() {
     const menu = document.getElementById('mobile-menu');
     menu.classList.toggle('hidden');
-});
-
-// Form submission
-document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Here you would normally send the form data to your server
-    // For this example, we'll just show an alert
-    alert('Inscrição enviada com sucesso! Entraremos em contato em breve.');
-    this.reset();
-    
-    // Scroll to top
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
 });
 
 // Smooth scrolling for anchor links
@@ -42,22 +59,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             }
         }
     });
-});
-
-// Add fade-in animation to elements as they come into view
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
-            observer.unobserve(entry.target);
-        }
-    });
-}, {
-    threshold: 0.1
-});
-
-document.querySelectorAll('section').forEach(section => {
-    observer.observe(section);
 });
 
 // Modal functionality

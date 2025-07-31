@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/tailwind.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
 </head>
 <body class="bg-white text-gray-800">
@@ -46,36 +48,42 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-gradient py-16 pb-0 md:py-10 md:pb-0 relative">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+    <section class=" relative py-16 pb-0 md:py-10 md:pb-0 hero-background ">
+    <!-- Metade direita com fundo animado (GIF) -->
+
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center relative z-10">
+            <!-- Texto -->
             <div class="md:w-1/2 mb-10 md:py-5 md:mb-0 fade-in">
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                    Férias que <span class="text-primary">Transformam</span>: <br>Conhecimento, Prática e Impacto
-                </h1>
-                <p class="text-lg text-gray-600 mb-8">
-                    Uma experiência única para estudantes que querem ir além da sala de aula. Desenvolva habilidades reais, faça networking e crie impacto na sociedade.
-                </p>
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="#inscricao" class="bg-primary hover:bg-secondary text-white font-bold py-3 px-8 rounded-full transition duration-300 text-center">
-                        Inscrever-se agora
-                    </a>
-                    <a href="#programa" class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-8 rounded-full transition duration-300 text-center">
-                        Conhecer o programa
-                    </a>
-                </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                Férias que <span class="text-primary">Transformam</span>: <br>Conhecimento, Prática e Impacto
+            </h1>
+            <p class="text-lg text-gray-900 mb-8">
+                Uma experiência única para estudantes que querem ir além da sala de aula. Desenvolva habilidades reais, faça networking e crie impacto na sociedade.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#inscricao" class="bg-primary hover:bg-secondary text-white font-bold py-3 px-8 rounded-full transition duration-300 text-center">
+                Inscrever-se agora
+                </a>
+                <a href="#programa" class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-8 rounded-full transition duration-300 text-center">
+                Conhecer o programa
+                </a>
             </div>
-            <div class="HeroIcon-container md:w-1/2 flex justify-center animate-float absolute md:right-20">
-                <img src="./assets/img/HeroIcon.png" alt="Estudantes felizes" class="rounded-lg w-full max-w-md z-0">
             </div>
 
-            <img src="./assets/img/HeroImg.png" alt="" class="HeroImg z-10 md:w-2/3">
+            <!-- Imagem principal -->
+           <!--  <div class="md:w-1/2 flex justify-center relative z-10">
+               <img src="./assets/img/HeroIcon.png" alt="Estudantes felizes" class="rounded-lg w-full max-w-md animate-float">
+           </div>--> 
+           
         </div>
 
-        <img src="./assets/img/HeroGraphic.png" alt="" class="HeroGraphic z-20">
+        <!-- Gráfico decorativo -->
+        <img src="./assets/img/HeroGraphic.png" alt="" class="HeroGraphic z-10">
     </section>
 
+
     <section class="py-16 md:pt-36 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto" id="sobre">
-        <div class="text-center mb-12">
+        <div class="text-center mb-12" data-aos="fade-up" data-aos-delay="100">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Sobre o Projecto</h2>
             <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
             <p class=" text-gray-600 max-w-3xl mx-auto">
@@ -83,7 +91,7 @@
             </p>
         </div>
         
-        <div class="swiper">
+        <div class="swiper" data-aos="fade-up">
             <section id="slider" class="slider-wrapper ">
                 
                 <section class="swiper-wrapper flex flex-row items-center">
@@ -192,7 +200,7 @@
     <!-- Benefits Section -->
     <section id="beneficios" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
+            <div class="text-center mb-12" data-aos="fade-up" data-aos-delay="100">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">O que você vai ganhar</h2>
                 <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -202,7 +210,7 @@
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Benefit 1 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm card-hover">
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover" data-aos="fade-up" data-aos-delay="100">
                     <div class="text-primary text-4xl mb-4">
                         <i class="fas fa-laptop-code"></i>
                     </div>
@@ -213,7 +221,7 @@
                 </div>
                 
                 <!-- Benefit 2 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm card-hover">
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover" data-aos="fade-up" data-aos-delay="200">
                     <div class="text-primary text-4xl mb-4">
                         <i class="fas fa-briefcase"></i>
                     </div>
@@ -224,7 +232,7 @@
                 </div>
                 
                 <!-- Benefit 3 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm card-hover">
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover" data-aos="fade-up" data-aos-delay="300">
                     <div class="text-primary text-4xl mb-4">
                         <i class="fas fa-users"></i>
                     </div>
@@ -235,7 +243,7 @@
                 </div>
                 
                 <!-- Benefit 4 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm card-hover">
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover" data-aos="fade-up" data-aos-delay="400">
                     <div class="text-primary text-4xl mb-4">
                         <i class="fas fa-map-marked-alt"></i>
                     </div>
@@ -250,7 +258,7 @@
 
     <!-- Program Components -->
     <section id="programa" class=" py-16 md:pb-60 bg-white relative">
-        <div class="container mx-auto px-6">
+        <div class="container mx-auto px-6" data-aos="fade-up">
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Componentes do Programa</h2>
                 <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
@@ -261,8 +269,8 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Component 1 -->
-                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 card-hover">
-                    <div class="text-primary text-3xl mb-4">
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-primary text-3xl mb-4" data-aos="fade-right" data-aos-delay="200">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Formações Intensivas</h3>
@@ -286,8 +294,8 @@
                 </div>
                 
                 <!-- Component 2 -->
-                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 card-hover">
-                    <div class="text-primary text-3xl mb-4">
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-primary text-3xl mb-4" data-aos="fade-right" data-aos-delay="200">
                         <i class="fas fa-building"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Estágios Profissionais</h3>
@@ -311,8 +319,8 @@
                 </div>
                 
                 <!-- Component 3 -->
-                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 card-hover">
-                    <div class="text-primary text-3xl mb-4">
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-primary text-3xl mb-4" data-aos="fade-right" data-aos-delay="200">
                         <i class="fas fa-campground"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Acampamentos</h3>
@@ -336,8 +344,8 @@
                 </div>
                 
                 <!-- Component 4 -->
-                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 card-hover">
-                    <div class="text-primary text-3xl mb-4">
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-primary text-3xl mb-4" data-aos="fade-right" data-aos-delay="200">
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Visitas Técnicas</h3>
@@ -361,8 +369,8 @@
                 </div>
                 
                 <!-- Component 5 -->
-                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 card-hover">
-                    <div class="text-primary text-3xl mb-4">
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-primary text-3xl mb-4" data-aos="fade-right" data-aos-delay="200">
                         <i class="fas fa-hands-helping"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Projeto Comunitário</h3>
@@ -382,8 +390,8 @@
                 </div>
                 
                 <!-- Component 6 -->
-                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 card-hover">
-                    <div class="text-primary text-3xl mb-4">
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-primary text-3xl mb-4" data-aos="fade-right" data-aos-delay="200">
                         <i class="fas fa-network-wired"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Comunidade</h3>
@@ -414,14 +422,14 @@
     <!-- Testimonials -->
     <section class="py-16 md:pt-40 pb-16 bg-primary text-white">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
+            <div class="text-center mb-12"  data-aos="fade-up" data-aos-delay="100">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">O que dizem os participantes</h2>
                 <div class="w-20 h-1 bg-white mx-auto mb-6"></div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Testimonial 1 -->
-                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm"  data-aos="fade-up">
                     <div class="flex items-center mb-4">
                         <div>
                             <h4 class="font-bold">Maria Silva</h4>
@@ -441,7 +449,7 @@
                 </div>
                 
                 <!-- Testimonial 2 -->
-                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm"  data-aos="fade-up">
                     <div class="flex items-center mb-4">
                         <div>
                             <h4 class="font-bold">João Mendes</h4>
@@ -461,7 +469,7 @@
                 </div>
                 
                 <!-- Testimonial 3 -->
-                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm"  data-aos="fade-up">
                     <div class="flex items-center mb-4">
                         <div>
                             <h4 class="font-bold">Ana Pereira</h4>
@@ -500,7 +508,7 @@
     <!-- Formulário de Inscrição -->
     <section id="inscricao" class="py-16 bg-white">
         <div class="container mx-auto px-4 max-w-4xl">
-            <div class="text-center mb-12">
+            <div class="text-center mb-12"  data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Formulário de Inscrição</h2>
                 <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -508,7 +516,7 @@
                 </p>
             </div>
             
-            <form class="bg-gray-50 p-6 md:p-8 rounded-xl shadow-sm">
+            <form class="bg-gray-50 p-6 md:p-8 rounded-xl shadow-sm" id="form-inscricao" action="https://script.google.com/macros/s/AKfycbwyTNZnNlysUxbpvIkySXpbAjdJsg6RuzaiCSQ13Cxvudyg-6tbqwZRtFk2BOsIY6K8/exec" method="POST" data-aos="fade-up" data-aos-delay="100">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Name -->
                     <div class="md:col-span-2">
@@ -519,7 +527,7 @@
                     <!-- Age -->
                     <div>
                         <label for="idade" class="block text-gray-700 font-medium mb-2">Idade*</label>
-                        <input type="number" id="idade" name="idade" min="16" max="26" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        <input type="number" id="idade" name="idade" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
                     </div>
                     
                     <!-- Email -->
@@ -544,7 +552,16 @@
                     <!-- Course -->
                     <div>
                         <label for="curso" class="block text-gray-700 font-medium mb-2">Curso ou Área de Interesse*</label>
-                        <input type="text" id="curso" name="curso" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        <select id="curso" name="curso" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="Formação em Excel e Power BI para os Negócios">Formação em Excel e Power BI para os Negócios</option>
+                            <option value="Planeamento Estratégico para Pequenos Negócios">Planeamento Estratégico para Pequenos Negócios</option>
+                            <option value="Elaboração de Planos de Marketing para pequenos e Micros Negócios">Elaboração de Planos de Marketing para pequenos e Micros Negócios</option>
+                            <option value="Empreendedorismo como Lean Inception">Empreendedorismo como Lean Inception</option>
+                            <option value="Mapeamento de Processos com Bizagi">Mapeamento de Processos com Bizagi</option>
+                            <option value="Contabilidade no Primavera">Contabilidade no Primavera</option>
+                            <option value="Estágio Prático em contabilidade com o Primavera">Estágio Prático em contabilidade com o Primavera</option>
+                        </select>
                     </div>
                     
                     <!-- How did you hear -->
@@ -593,9 +610,13 @@
                 
                 <!-- Submit -->
                 <div class="mt-8 text-center">
-                    <button type="submit" class="bg-primary hover:bg-secondary text-white font-bold py-4 px-12 rounded-full transition duration-300">
+                    <button id="btn-enviar" type="submit" class="bg-primary hover:bg-secondary text-white font-bold py-4 px-12 rounded-full transition duration-300">
                         Enviar Inscrição
                     </button>
+                </div>
+
+                <div id="sucesso" class="hidden text-green-600 font-semibold mt-4">
+                    Inscrição enviada com sucesso! Verifica o teu e-mail.
                 </div>
             </form>
         </div>
@@ -695,5 +716,9 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

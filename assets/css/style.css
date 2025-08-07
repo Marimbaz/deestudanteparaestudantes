@@ -6,7 +6,8 @@ body {
 }
 
 .hero-background {
-    min-height: 100vh;
+  min-height: 60vh;
+  padding: 10rem 0;
   background-image:
     linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0) 70%),
     url('../img/fundo-animado.webp');
@@ -86,7 +87,7 @@ body {
     }
     
     .hero-background {
-        
+        padding: 5rem 0;
         background-image:
             linear-gradient(to top, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 100%),
             url('../img/fundo-animado.webp');

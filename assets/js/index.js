@@ -121,45 +121,111 @@ const swiper = new Swiper('.slider-wrapper', {
         {
             title: "Formações Intensivas",
             table: `
-                <div class="overflow-x-auto text-sm mb-6">
-                    <table class="w-full border-collapse border text-left min-w-[600px]">
+                <div class="overflow-x-auto mt-8">
+                    <table class="w-full border text-sm md:text-base">
                         <thead>
                         <tr class="bg-primary text-white">
-                            <th class="py-2 px-2">Curso</th>
-                            <th class="py-2 px-2">Descrição</th>
-                            <th class="py-2 px-2">Público-Alvo</th>
+                            <th class="py-2 px-3 text-left">Formação e Formador</th>
+                            <th class="py-2 px-3 text-left">Descrição</th>
+                            <th class="py-2 px-3 text-left">Público-Alvo</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr class="odd:bg-white even:bg-gray-50">
-                            <td class="border px-2 py-2 font-semibold">Excel e Power BI para os Negócios</td>
-                            <td class="border px-2 py-2">Ferramentas para análise de dados e visualização de indicadores</td>
-                            <td class="border px-2 py-2">Universitários de todas as áreas</td>
+                        <tr>
+                            <td class="border px-3 py-2">
+                            Excel e Power BI para os Negócios <br>
+                            <span class="text-gray-600 text-sm">Formador: Gil Mac-Mahon – FORMADOR CREDENCIADO PELO CENFFOR 0242 FPIF/2024</span>
+                            </td>
+                            <td class="border px-3 py-2">Ferramentas para análise de dados e visualização de indicadores</td>
+                            <td class="border px-3 py-2">Universitários de todas as áreas</td>
                         </tr>
-                        <tr class="odd:bg-white even:bg-gray-50">
-                            <td class="border px-2 py-2 font-semibold">Planeamento Estratégico para Pequenos Negócios</td>
-                            <td class="border px-2 py-2">Criação de objetivos, metas e planos para PMEs</td>
-                            <td class="border px-2 py-2">Estudantes de gestão e negócios</td>
+                        <tr>
+                            <td class="border px-3 py-2">
+                            Planeamento Estratégico para Pequenos Negócios <br>
+                            <span class="text-gray-600 text-sm">Formador: Prof. Msc. Segunda Tavares</span>
+                            </td>
+                            <td class="border px-3 py-2">Criação de objetivos, metas e planos para PMEs</td>
+                            <td class="border px-3 py-2">Estudantes de gestão e negócios</td>
                         </tr>
-                        <tr class="odd:bg-white even:bg-gray-50">
-                            <td class="border px-2 py-2 font-semibold">Como Elaborar um Plano de Marketing</td>
-                            <td class="border px-2 py-2">Estratégias práticas de marketing digital e tradicional</td>
-                            <td class="border px-2 py-2">Estudantes de marketing e comunicação</td>
+                        <tr>
+                            <td class="border px-3 py-2">
+                            Como Elaborar um Plano de Marketing <br>
+                            <span class="text-gray-600 text-sm">Formador: Prof. Msc. Segunda Tavares</span>
+                            </td>
+                            <td class="border px-3 py-2">Estratégias práticas de marketing digital e tradicional para negócios</td>
+                            <td class="border px-3 py-2">Estudantes de marketing e comunicação</td>
                         </tr>
-                        <tr class="odd:bg-white even:bg-gray-50">
-                            <td class="border px-2 py-2 font-semibold">Empreendedorismo na Prática com Lean Inception</td>
-                            <td class="border px-2 py-2">Criação de MVPs e validação de ideias de negócio</td>
-                            <td class="border px-2 py-2">Estudantes empreendedores</td>
+                        <tr>
+                            <td class="border px-3 py-2">
+                            Empreendedorismo na Prática com Lean Inception <br>
+                            <span class="text-gray-600 text-sm">Formadora: Nywkha Casimiro – CEO do CEU</span>
+                            </td>
+                            <td class="border px-3 py-2">Criação de MVPs e validação de ideias de negócio</td>
+                            <td class="border px-3 py-2">Estudantes empreendedores</td>
                         </tr>
-                        <tr class="odd:bg-white even:bg-gray-50">
-                            <td class="border px-2 py-2 font-semibold">Mapeamento de Processos com BIZAGI</td>
-                            <td class="border px-2 py-2">Modelagem de processos com software empresarial</td>
-                            <td class="border px-2 py-2">Estudantes de gestão, TI e logística</td>
+                        <tr>
+                            <td class="border px-3 py-2">
+                            Modelagem de Processos com BPMN no Bizagi para Iniciantes <br>
+                            <span class="text-gray-600 text-sm">Formador: Dário Sassa – CEO da KUENHA</span>
+                            </td>
+                            <td class="border px-3 py-2">Modelagem de processos empresariais com software</td>
+                            <td class="border px-3 py-2">Estudantes de gestão, TI e logística</td>
                         </tr>
-                        <tr class="odd:bg-white even:bg-gray-50">
-                            <td class="border px-2 py-2 font-semibold">Contabilidade no Primavera</td>
-                            <td class="border px-2 py-2">Prática de contabilidade informatizada com sistema Primavera</td>
-                            <td class="border px-2 py-2">Estudantes de contabilidade</td>
+                        <tr>
+                            <td class="border px-3 py-2">
+                            Contabilidade no Primavera <br>
+                            <span class="text-gray-600 text-sm">Formadores: André Culolo – Delloite Angola; Bernel Bernau – Soares da Costa</span>
+                            </td>
+                            <td class="border px-3 py-2">Prática de contabilidade informatizada com sistema Primavera</td>
+                            <td class="border px-3 py-2">Estudantes de contabilidade</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-3 py-2">
+                            Gestão de Tempo: Como Organizar o Dia e Render Mais <br>
+                            <span class="text-gray-600 text-sm">Formadora: Suzeth Coimbra – Customer and Team Manager</span>
+                            </td>
+                            <td class="border px-3 py-2">Aprende a organizar o dia, definir prioridades e aumentar a produtividade com técnicas práticas</td>
+                            <td class="border px-3 py-2">Estudantes universitários</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-3 py-2">
+                            Processamento dos Efluentes do Petróleo Bruto <br>
+                            <span class="text-gray-600 text-sm">Formador: Manuel Cusseiala – Eng. Mecânico, TotalEnergies</span>
+                            </td>
+                            <td class="border px-3 py-2">Técnicas e tecnologias para tratamento de resíduos líquidos da indústria petrolífera, redução de impactos ambientais e recuperação de subprodutos</td>
+                            <td class="border px-3 py-2">Estudantes de Engenharia de Petróleos, Mecânica, Química, Geologia e áreas afins</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-3 py-2">
+                            Introdução à Tecnologia de Poços Submarinos <br>
+                            <span class="text-gray-600 text-sm">Formador: Eng. Nhanga Pinto Cristovão – Director de Operações e Conselheiro Técnico, LUAJARDIM</span>
+                            </td>
+                            <td class="border px-3 py-2">Equipamentos, segurança operacional, manutenção e tendências da tecnologia em Angola e no mundo</td>
+                            <td class="border px-3 py-2">Estudantes de Engenharia de Petróleos, Mecânica, Química, Geologia e áreas afins</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-3 py-2">
+                            Introdução à Perfuração de Poços Submarinos <br>
+                            <span class="text-gray-600 text-sm">Formador: Eng. Nhanga Pinto Cristovão – LUAJARDIM</span>
+                            </td>
+                            <td class="border px-3 py-2">Equipamentos, segurança operacional, manutenção e tendências da tecnologia</td>
+                            <td class="border px-3 py-2">Estudantes de Engenharia de Petróleos, Mecânica, Química, Geologia e áreas afins</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-3 py-2">
+                            Introdução à Completação de Poços Submarinos <br>
+                            <span class="text-gray-600 text-sm">Formador: Eng. Nhanga Pinto Cristovão – LUAJARDIM</span>
+                            </td>
+                            <td class="border px-3 py-2">Equipamentos, segurança operacional, manutenção e tendências da tecnologia</td>
+                            <td class="border px-3 py-2">Estudantes de Engenharia de Petróleos, Mecânica, Química, Geologia e áreas afins</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-3 py-2">
+                            Filtração de Poços <br>
+                            <span class="text-gray-600 text-sm">Formador: Eng. Nhanga Pinto Cristovão – LUAJARDIM</span>
+                            </td>
+                            <td class="border px-3 py-2">Equipamentos, segurança operacional, manutenção e tendências da tecnologia</td>
+                            <td class="border px-3 py-2">Estudantes de Engenharia de Petróleos, Mecânica, Química, Geologia e áreas afins</td>
                         </tr>
                         </tbody>
                     </table>
